@@ -1,0 +1,113 @@
+.parallax {
+    background-attachment: fixed;
+}
+
+.overlay--soft::after { 
+    background-color: rgba(0, 0, 0, .35);
+}
+
+.ann-ímg {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+}
+
+.testimonials article { 
+    margin: unset;
+    max-width: unset;
+}
+
+.testimonials article.left {
+    text-align: left;
+    margin-left: 30px;
+}
+
+.testimonials article.right {
+    text-align: right;
+    margin-right: 30px;
+}
+
+#topbar a:hover i::before,
+#topbar a:hover i::after {
+    transition: none;
+}
+
+#gallery li {
+    background-color: black;
+    overflow-y: hidden;
+}
+
+#gallery li.vertical img {
+    transform: rotate(90deg);
+}
+
+#gallery li.vertical a {
+    transform: rotate(90deg) scale(0.9);
+}
+
+#footer {
+    padding: 40px 0;
+}
+
+#footer #contact-me {
+    text-align: center;
+}
+
+#footer .one_centered_block {
+    width: 55%;
+    margin: 0 auto;
+}
+
+#footer .list-with-img ul {
+    float: left;
+    width: 50%;
+    margin-right: 10px;
+    padding: 0;
+}
+
+#footer .list-with-img img {
+    float: left;
+    width: calc(50% - 10px);
+    opacity: 0.6;
+}
+
+.centered {
+    text-align: center;
+}
+
+.img-caption {
+    font-size: 12px;
+}
+
+.content .img--about-me {
+    max-width: 35%;
+}
+
+@media screen and (max-width:750px){
+    #footer .one_centered_block {
+        width: 75%;
+    }
+
+    .content .img--about-me {
+        float: right;
+    }
+}
+
+@media screen and (max-width:550px){
+    #footer .one_centered_block {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:415px){
+    #footer .one_centered_block,
+    #footer .list-with-img ul,
+    #footer .list-with-img img {
+        width: 100%;
+    }
+
+    .content .img--about-me {
+        float: none;
+        max-width: 100%;
+    }
+}
