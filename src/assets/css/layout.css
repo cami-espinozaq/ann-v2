@@ -12,16 +12,6 @@ File: Layout CSS
 @import url("framework.css");
 
 
-/* Rows
---------------------------------------------------------------------------------------------------------------- */
-.row0, .row0 a{}
-.row1, .row1 a{}
-.row2, .row2 a{}
-.row3, .row3 a{}
-.row4, .row4 a{}
-.row5, .row5 a{}
-
-
 /* Top Bar
 --------------------------------------------------------------------------------------------------------------- */
 #topbar{padding:15px 0; font-size:.8rem; text-transform:uppercase; text-align:center;}
@@ -61,19 +51,16 @@ File: Layout CSS
 .container{padding:100px 0;}
 
 /* Content */
-.container .content{}
 
 .sectiontitle{display:block; max-width:55%; margin:0 auto 80px; text-align:center;}
 .sectiontitle *{margin:0;}
 .cta.sectiontitle{margin-bottom:0;}
 .cta.sectiontitle .heading, .cta.sectiontitle p{margin-bottom:30px;}
 
-.testimonials{}
 .testimonials article{max-width:55%; margin:0 auto; text-align:center;}
 .testimonials article *{margin:0; padding:0;}
 .testimonials article img{margin-bottom:20px; border-radius:50%;}
 .testimonials article blockquote{margin-bottom:20px;}
-.testimonials article .heading{}
 .testimonials article em{display:block; margin-top:-5px; font-size:.8rem; font-style:normal;}
 
 .elements li:nth-child(-n+3){margin-bottom:50px;}/* Adds bottom margin to the first two elements only */
@@ -90,10 +77,7 @@ File: Layout CSS
 .logos li:last-child{margin-bottom:0;}/* Used when elements stack in small viewports */
 .logos li a{display:inline-block; max-width:100%;}
 
-.latest{}
-.latest article{}
 .latest article figure{display:block; position:relative;}
-.latest article figure img{}
 .latest article figure figcaption{position:absolute; bottom:10px; left:10px; width:50px;}
 .latest article figure figcaption *{display:block; margin:0; padding:0; text-align:center; text-transform:uppercase; font-style:normal; line-height:1;}
 .latest article figure figcaption time{width:100%;}
@@ -101,12 +85,9 @@ File: Layout CSS
 .latest article figure figcaption time em{padding:8px 0;}
 .latest article .txtwrap{padding:25px 20px;}
 .latest article .txtwrap .heading{margin:0; font-size:1.2rem;}
-.latest article .txtwrap .meta{}
 .latest article .txtwrap .meta li{display:inline-block; font-size:.8rem;}
 .latest article .txtwrap .meta li::after{margin-left:5px; content:"|";}
 .latest article .txtwrap .meta li:last-child::after{margin:0; content:"";}
-.latest article .txtwrap p{}
-.latest article .txtwrap footer{}
 
 /* Comments */
 #comments ul{margin:0 0 40px 0; padding:0; list-style:none;}
@@ -124,7 +105,6 @@ File: Layout CSS
 #comments input[type="submit"], #comments input[type="reset"]{display:inline-block; width:auto; min-width:150px; margin:0; padding:8px 5px; cursor:pointer;}
 
 /* Sidebar */
-.container .sidebar{}
 
 .sidebar .sdb_holder{margin-bottom:50px;}
 .sidebar .sdb_holder:last-child{margin-bottom:0;}
@@ -132,7 +112,6 @@ File: Layout CSS
 
 /* Split Box
 --------------------------------------------------------------------------------------------------------------- */
-.split{}
 
 .split section{display:block; position:relative; float:right; width:50%; padding:100px 0 100px 50px;}
 .split section::after{display:block; position:absolute; top:0; right:-1000%; bottom:0; left:100%; content:"";}
@@ -149,7 +128,6 @@ File: Layout CSS
 #footer .linklist li::before, #footer .linklist li::after{display:table; content:"";}
 #footer .linklist li, #footer .linklist li::after{clear:both;}
 
-#footer .contact{}
 #footer .contact.linklist li, #footer .contact.linklist li:last-child{position:relative; padding-left:40px;}
 #footer .contact li *{margin:0; padding:0; line-height:1.6;}
 #footer .contact li i{display:block; position:absolute; top:0; left:0; width:30px; font-size:16px; text-align:center;}
@@ -267,7 +245,6 @@ td{border-width:0 1px;}
 .faico a{display:inline-block; width:36px; height:36px; line-height:36px; font-size:18px; text-align:center;}
 
 .faico a{color:#FFFFFF; background-color:#646464;}
-.faico a:hover{}
 
 .faicon-dribble:hover{background-color:#EA4C89;}
 .faicon-facebook:hover{background-color:#3B5998;}
@@ -397,21 +374,12 @@ table a, #comments a{background-color:inherit;}
 @media screen and (max-width:900px){
 	.hoc{max-width:90%;}
 
-	#header{}
-
-	#mainav{}
 	#mainav ul{display:none;}
 	#mainav form{display:block;}
 
-	#breadcrumb{}
-
-	.container{}
 	#comments input[type="reset"]{margin-top:10px;}
 	.pagination li{display:inline-block; margin:0 5px 5px 0;}
 
-	#footer{}
-
-	#copyright{}
 	#copyright p:first-of-type{margin-bottom:10px;}
 }
 

@@ -1,7 +1,8 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
+import { faFacebookF , faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { Link } from 'react-router-dom';
 import '../../assets/css/layout.css';
 
@@ -12,7 +13,7 @@ const Header = () => {
                 <div id="topbar" className="hoc clear"> 
                     <ul>    
                         <li>
-                            <FontAwesomeIcon icon={faPhone} />
+                            <FontAwesomeIcon icon={faPhoneAlt} />
                             +44 (0) 7922 532760
                         </li>
                         <li>
@@ -24,7 +25,7 @@ const Header = () => {
                                 href="https://www.facebook.com/anncarrtours"
                                 target="_blank"
                                 rel="noopener noreferrer">
-                                <FontAwesomeIcon icon={faFacebook} />
+                                <FontAwesomeIcon icon={faFacebookF} />
                                 /anncarrtours
                             </a>
                         </li>
