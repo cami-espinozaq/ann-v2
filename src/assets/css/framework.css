@@ -8,13 +8,6 @@ Licence URI: https://www.os-templates.com/template-terms
 File: Framework CSS
 */
 
-html{overflow-y:scroll; overflow-x:hidden;}
-html, body{margin:0; padding:0; font-size:14px; line-height:1.6em;}
-
-*, *::before, *::after{box-sizing:border-box;}
-
-.right{text-align:right;}
-.nospace{margin:0; padding:0; list-style:none;}
 
 .overlay{position:relative; z-index:1;}
 .overlay::after{display:block; position:absolute; top:0; left:0; width:100%; height:100%; content:""; z-index:-1;}
@@ -62,7 +55,7 @@ It should be used in conjunction with a second class or ID
 
 /* HTML 5 Overrides
 --------------------------------------------------------------------------------------------------------------- */
-article, aside, figure, header, main, nav, section{display:block; margin:0; padding:0;}
+article, figure, header, main, nav, section{display:block; margin:0; padding:0;}
 
 
 /* Grid

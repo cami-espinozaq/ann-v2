@@ -27,14 +27,6 @@ File: Layout CSS
 .container{padding:100px 0;}
 
 
-/* Transition Fade
-This gives a smooth transition to "ALL" elements used in the layout - other than the navigation form used in mobile devices
-If you don't want it to fade all elements, you have to list the ones you want to be faded individually
-Delete it completely to stop fading
---------------------------------------------------------------------------------------------------------------- */
-*, *::before, *::after{transition:all .28s ease-in-out;}
-
-
 /* Navigation
 --------------------------------------------------------------------------------------------------------------- */
 nav ul, nav ol{margin:0; padding:0; list-style:none;}
@@ -49,7 +41,7 @@ nav ul, nav ol{margin:0; padding:0; list-style:none;}
 
 /* Colours
 --------------------------------------------------------------------------------------------------------------- */
-body{color:#A8A7A6; background-color:#0C0C0C;}
+
 a{color:#EA5616;}
 a:active, a:focus{background:transparent;}/* IE10 + 11 Bugfix - prevents grey background */
 hr, .borderedbox{border-color:#F4F4F4;}
@@ -62,8 +54,8 @@ input:focus, *:required:focus{border-color:#EA5616;}
 .overlay.light::after{background-color:rgba(255,255,255,.8);}
 .overlay.coloured::after{background-color:rgba(234,86,22,.55);}
 
-.btn, .btn.inverse:hover{color:#FFFFFF; background-color:#EA5616; border-color:#EA5616;}
-.btn:hover, .btn.inverse{color:inherit; background-color:transparent; border-color:inherit;}
+.btn {color:#FFFFFF; background-color:#EA5616; border-color:#EA5616;}
+.btn:hover {color:inherit; background-color:transparent; border-color:inherit;}
 
 
 /* Rows */
