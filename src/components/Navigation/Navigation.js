@@ -1,9 +1,10 @@
 import React from 'react';
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 
-export const Navigation = (props) => {
+import "./navigation.css";
 
+export const Navigation = (props) => {
     const background = `url(${props.backgroundUrl})`;
     return (
         <div className="bgded parallax"

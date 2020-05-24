@@ -1,0 +1,47 @@
+.testimonials article * { 
+    margin: 0;
+    padding: 0;
+}
+
+.testimonials article.left {
+    text-align: left;
+    margin-left: 30px;
+}
+
+.testimonials article.right {
+    text-align: right;
+    margin-right: 30px;
+}
+
+.testimonials article blockquote {
+    margin-bottom:20px;
+}
+
+.ann-img {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+}
+
+.overlay--soft::after { 
+    background-color: rgba(0, 0, 0, .35);
+}
+
+.parallax {
+    background-attachment: fixed;
+}
+
+.font-xs{font-size:.8rem;}
+
+/* Page Intro
+--------------------------------------------------------------------------------------------------------------- */
+#pageintro{padding:200px 0; text-align:center;}
+#pageintro *{word-wrap:break-word;}
+#pageintro .heading{margin-bottom:20px; font-size:5rem; font-weight:400;}
+#pageintro p{font-size:1.2rem;}
+
+@media screen and (max-width:750px) {
+    #pageintro .heading {
+        font-size:2rem;
+    }
+}

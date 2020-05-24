@@ -5,6 +5,8 @@ import Background from '../../assets/images/about/oxford2.jpeg';
 import MainImg from '../../assets/images/about/ann_bnw.jpeg';
 import GroupImg from '../../assets/images/about/ann_ppl.jpeg';
 
+import "./aboutMe.css";
+
 const AboutMe = () => {
     return (
         <React.Fragment>

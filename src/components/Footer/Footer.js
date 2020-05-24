@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhoneAlt, faMobile } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import Badges from '../../assets/images/footer/badges.png';
-import "../../assets/css/custom.css";
+import "./footer.css";
 
 const Footer = () => {
     return (

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Navigation, Breadcrumb } from '../../components/Navigation/Navigation';
 import Background from '../../assets/images/about/oxford2.jpeg';
+import "./gallery.css";
 
 const importAll = r => r.keys().map(r);
 const images = importAll(require.context('../../assets/images/gallery/', false, /\.(png|jpg)$/));

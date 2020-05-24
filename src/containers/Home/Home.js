@@ -12,6 +12,8 @@ import theater from '../../assets/images/home/theater.jpg';
 import camden from '../../assets/images/home/camden-docks.jpg';
 import stonehenge from '../../assets/images/home/stonehenge.jpg';
 
+import "./home.css";
+
 const IMAGES = [
     {
         img: shakespeare,
@@ -75,23 +77,22 @@ const Home = () => {
             <div className="wrapper row3">
                 <main className="hoc container clear"> 
                     <div className="group">
-                    <div className="one_half first">
-                        <p className="font-xs nospace">The Guide</p>
-                        <h6 className="heading">Hi, I'm Ann...</h6>
-                        <p>Drawing on over thirty years of experience in guiding and tourism, 
-                            I provide bespoke tours, specialising in both the London and Heart 
-                            of England regions of the United Kingdom. There is a wide range of 
-                            experiences available to suit every taste, from the modern to the 
-                            historic, from general to specific — we can make sure that your 
-                            excursion or event is handled both professionally and with style.
-                        </p>
-                        <Link className="btn" to="/about">About me &raquo;</Link> 
+                        <div className="one_half first">
+                            <p className="font-xs nospace">The Guide</p>
+                            <h6 className="heading">Hi, I'm Ann...</h6>
+                            <p>Drawing on over thirty years of experience in guiding and tourism, 
+                                I provide bespoke tours, specialising in both the London and Heart 
+                                of England regions of the United Kingdom. There is a wide range of 
+                                experiences available to suit every taste, from the modern to the 
+                                historic, from general to specific — we can make sure that your 
+                                excursion or event is handled both professionally and with style.
+                            </p>
+                            <Link className="btn" to="/about">About me &raquo;</Link> 
+                        </div>
+                        <div className="one_half">
+                            <img className="ann-img" src={mainImg} alt="ann" />
+                        </div>
                     </div>
-                    <div className="one_half">
-                        <img className="ann-ímg" src={mainImg} alt="ann" />
-                    </div>
-                    </div>
-                    <div className="clear"></div>
                 </main>
             </div>
             {imageWrappers}

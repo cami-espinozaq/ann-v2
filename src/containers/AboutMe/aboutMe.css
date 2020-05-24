@@ -1,0 +1,27 @@
+.img-caption {
+    font-size: 12px;
+}
+
+.centered {
+    text-align: center;
+}
+
+.content .img--about-me {
+    max-width: 35%;
+}
+
+@media screen and (max-width:750px){
+    .content .img--about-me {
+        float: right;
+    }
+}
+
+
+@media screen and (max-width:415px){
+    .content .img--about-me {
+        float: none;
+        max-width: 100%;
+    }
+}
+
+.borderedbox{border:1px solid;}

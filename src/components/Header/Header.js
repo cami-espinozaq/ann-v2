@@ -6,6 +6,7 @@ import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import '../../assets/css/layout.css';
+import './header.css';
 
 const Header = () => {
     return (
