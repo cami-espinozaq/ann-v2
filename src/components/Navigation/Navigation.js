@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 export const Navigation = (props) => {
 
@@ -33,8 +34,8 @@ export const Breadcrumb = (props) => {
     return (
         <div id="breadcrumb" className="hoc clear"> 
             <ul>
-                <li><Link to="#">Home</Link></li>
-                <li><Link to="#">{props.activePage}</Link></li>
+                <li><HashLink to="#">Home</HashLink></li>
+                <li><HashLink to="#">{props.activePage}</HashLink></li>
             </ul>
         </div>
     );

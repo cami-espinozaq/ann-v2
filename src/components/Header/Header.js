@@ -4,6 +4,7 @@ import { faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
 import { faFacebookF , faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import '../../assets/css/layout.css';
 
 const Header = () => {
@@ -47,7 +48,9 @@ const Header = () => {
                         <h1><Link to="/">Ann Carr Tours</Link></h1>
                     </div>
                     <div className="fl_right">
-                        <Link className="btn" to="#contact-me">Contact me</Link>
+                        <HashLink smooth className="btn" to="#contact-me">
+                            Contact me
+                        </HashLink>
                     </div>
                 </header>
             </div>
