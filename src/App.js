@@ -5,13 +5,20 @@ import { Switch, Route, Redirect } from 'react-router-dom';
 import AboutMe from './containers/AboutMe/AboutMe';
 import Gallery from './containers/Gallery/Gallery';
 import Home from './containers/Home/Home';
+import SimpleReactLightbox from "simple-react-lightbox";
 
 function App() {
+
+  const galleryLightBox = (
+    <SimpleReactLightbox>
+      <Gallery />
+    </SimpleReactLightbox>
+  );
 
   const routes = (
     <Switch>
       <Route path="/about" component={AboutMe} />
-      <Route path="/gallery" component={Gallery} />
+      <Route path="/gallery" render={() => galleryLightBox} />
       <Route path="/" exact component={Home} />
       <Redirect to="/" />
     </Switch>

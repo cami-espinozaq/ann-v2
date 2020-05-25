@@ -120,7 +120,7 @@ img {
 
 .overlay {
     position: relative; 
-    z-index: 1;
+    z-index: 0;
     color:#FFFFFF; 
     background-color:inherit;
 }
@@ -133,7 +133,7 @@ img {
     width:100%; 
     height:100%; 
     content:""; 
-    z-index:-1;
+    z-index:-2;
     color:inherit; 
     background-color:rgba(0,0,0,.55);
 }

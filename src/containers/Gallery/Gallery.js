@@ -1,5 +1,6 @@
 import React from 'react';
 import { Navigation, Breadcrumb } from '../../components/Navigation/Navigation';
+import { SRLWrapper } from "simple-react-lightbox";
 import Background from '../../assets/images/about/oxford2.jpeg';
 import "./gallery.css";
 
@@ -17,6 +18,18 @@ const Gallery = () => {
         );
     });
 
+    const options = {
+        settings: {
+            disablePanzoom: true
+        },
+        buttons: {
+            showDownloadButton: false
+        },
+        caption: {
+            showCaption: false
+        }
+    }
+
     return (
         <React.Fragment>
             <Navigation backgroundUrl={Background}>
@@ -29,7 +42,9 @@ const Gallery = () => {
                             <figure>
                                 <header className="heading">Gallery</header>
                                 <ul className="nospace clear gallery">
-                                    {imagesWrapper}
+                                    <SRLWrapper options={options}>
+                                        {imagesWrapper}
+                                    </SRLWrapper>
                                 </ul>
                             </figure>
                         </div>
