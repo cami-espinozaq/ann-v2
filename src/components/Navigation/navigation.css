@@ -2,7 +2,7 @@
     background-attachment: fixed;
 }
 
-#mainav .drop::after, #mainav li li .drop::after, #breadcrumb li a::after {position:absolute; font-family:'Aleo', serif; font-size:10px; line-height:10px;}
+#mainav .drop::after, #breadcrumb li a::after {position:absolute; font-family:'Aleo', serif; font-size:10px; line-height:10px;}
 
 #mainav {
     text-align:center;

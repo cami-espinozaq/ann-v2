@@ -37,18 +37,14 @@ const Gallery = () => {
             </Navigation>
             <div className="wrapper row3">
                 <main className="hoc container clear"> 
-                    <div className="content"> 
-                        <div id="gallery">
-                            <figure>
-                                <header className="heading">Gallery</header>
-                                <ul className="nospace clear gallery">
-                                    <SRLWrapper options={options}>
-                                        {imagesWrapper}
-                                    </SRLWrapper>
-                                </ul>
-                            </figure>
-                        </div>
-                    </div>
+                    <figure className="gallery">
+                        <header className="heading">Gallery</header>
+                        <ul className="nospace clear gallery">
+                            <SRLWrapper options={options}>
+                                {imagesWrapper}
+                            </SRLWrapper>
+                        </ul>
+                    </figure>
                 </main>
             </div>
         </React.Fragment>

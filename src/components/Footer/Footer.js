@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhoneAlt, faMobile, faChevronUp } from '@fortawesome/free-solid-svg-icons';
+import { faPhoneAlt, faMobileAlt, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import Badges from '../../assets/images/footer/badges.png';
 import { HashLink } from 'react-router-hash-link';
@@ -10,17 +10,17 @@ export const Footer = () => {
     return (
         <React.Fragment>
             <div className="wrapper row4">
-                <footer id="footer" className="hoc clear"> 
+                <footer className="footer hoc clear"> 
                     <div className="one_centered_block">
                         <h6 id="contact-me" className="heading">Contact Me</h6>
                         <div className="list-with-img">
-                            <ul className="linklist contact">
+                            <ul className="linklist">
                                 <li>
                                     <FontAwesomeIcon icon={faPhoneAlt} />
                                     +44 (0) 121 707 8538
                                 </li>
                                 <li>
-                                    <FontAwesomeIcon icon={faMobile} />
+                                    <FontAwesomeIcon icon={faMobileAlt} />
                                     +44 (0) 7922 532760
                                 </li>
                                 <li>
@@ -34,7 +34,7 @@ export const Footer = () => {
                 </footer>
             </div>
             <div className="wrapper row5">
-                <div id="copyright" className="hoc clear"> 
+                <div className="copyright hoc clear"> 
                     <p className="fl_left">
                         Copyright &copy; 2019 - All Rights Reserved - anncarrtours.co.uk
                     </p>
@@ -71,7 +71,7 @@ export const BackToTop = () => {
     }
 
     const backToTop = (
-        <HashLink smooth className="backtotop" to="#topbar">
+        <HashLink smooth className="backtotop" to="#top">
             <FontAwesomeIcon icon={faChevronUp} />
         </HashLink>
     );

@@ -12,7 +12,7 @@ const Header = () => {
     return (
         <React.Fragment>
             <div className="wrapper row0">
-                <div id="topbar" className="hoc clear"> 
+                <div id="top" className="topbar hoc clear"> 
                     <ul>    
                         <li>
                             <FontAwesomeIcon icon={faPhoneAlt} />

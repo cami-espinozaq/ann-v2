@@ -106,8 +106,7 @@ const HomeImageWrapper = (props) => {
         <div 
             className="wrapper bgded overlay overlay--soft parallax"
             style={{ backgroundImage: background }}>
-            <div className="hoc container testimonials clear"
-                style={{ padding: "200px 0" }}>
+            <div className="hoc testimonials clear">
                 <article className={props.float}>
                     <h6 className="heading">{props.title}</h6>
                     <blockquote>{props.quote}</blockquote>

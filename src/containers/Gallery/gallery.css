@@ -1,17 +1,19 @@
-#gallery li {
-    background-color: black;
-    overflow-y: hidden;
+.gallery {
+    display:block; 
+    width:100%; 
+    margin-bottom:50px;
 }
 
-#gallery li.vertical img {
+.gallery li {
+    background-color: black;
+    overflow-y: hidden;
+    margin-bottom:30px;
+}
+
+.gallery li.vertical img {
     transform: rotate(90deg);
 }
 
-#gallery li.vertical a {
+.gallery li.vertical a {
     transform: rotate(90deg) scale(0.9);
 }
-
-/* Gallery
---------------------------------------------------------------------------------------------------------------- */
-#gallery{display:block; width:100%; margin-bottom:50px;}
-#gallery li{margin-bottom:30px;}
