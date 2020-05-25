@@ -13,7 +13,7 @@ export const Navigation = (props) => {
                 <nav id="mainav" className="hoc clear">
                     <ul className="clear">
                         <li>
-                            <NavLink to="/">Home</NavLink>
+                            <NavLink to="/" exact>Home</NavLink>
                         </li>
                         <li>
                             <NavLink to="/about">About Me</NavLink>

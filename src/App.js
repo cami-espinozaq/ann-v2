@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
+import { Footer, BackToTop } from './components/Footer/Footer';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import AboutMe from './containers/AboutMe/AboutMe';
 import Gallery from './containers/Gallery/Gallery';
@@ -22,6 +22,7 @@ function App() {
       <Header />
       {routes}
       <Footer />
+      <BackToTop />
     </div>
   );
 }

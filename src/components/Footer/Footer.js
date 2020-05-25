@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhoneAlt, faMobile } from '@fortawesome/free-solid-svg-icons';
+import { faPhoneAlt, faMobile, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import Badges from '../../assets/images/footer/badges.png';
+import { HashLink } from 'react-router-hash-link';
 import "./footer.css";
 
-const Footer = () => {
+export const Footer = () => {
     return (
         <React.Fragment>
             <div className="wrapper row4">
@@ -52,4 +53,28 @@ const Footer = () => {
     );
 };
 
-export default Footer;
+export const BackToTop = () => {
+
+    const [ isScrolled, setIsScrolled ] = useState();
+
+    useEffect(() => {
+        window.addEventListener('scroll', scrollHandler);
+        return () => {
+            window.removeEventListener('scroll', scrollHandler);
+        }
+    }, []);
+
+    const scrollHandler = (e) => {
+        const element = e.target.documentElement
+        const visible = element.scrollTop / element.scrollHeight > 0.2;
+        setIsScrolled(visible);
+    }
+
+    const backToTop = (
+        <HashLink smooth className="backtotop" to="#topbar">
+            <FontAwesomeIcon icon={faChevronUp} />
+        </HashLink>
+    );
+
+    return isScrolled ? backToTop : null;
+}

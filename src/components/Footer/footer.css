@@ -13,7 +13,7 @@
 
 /* Footer */
 #footer .heading{color:#FFFFFF;}
-#footer hr, #footer .linklist li{border-color:rgba(255,255,255,.1);}
+#footer .linklist li{border-color:rgba(255,255,255,.1);}
 
 #footer input, #footer button{border-color:transparent;}
 #footer input{color:#FFFFFF; background-color:#646464;}
@@ -50,6 +50,32 @@
     float: left;
     width: calc(50% - 10px);
     opacity: 0.6;
+}
+
+.backtotop {
+    z-index:999; display:inline-block; 
+    position:fixed; 
+    bottom:20px; 
+    right:20px; 
+    width:36px; 
+    height:36px; 
+    line-height:36px; 
+    font-size:16px; 
+    text-align:center; 
+    opacity:.2;
+    color:#FFFFFF; 
+    background-color:#EA5616;
+}
+
+.backtotop i {
+    display:block;
+    width:100%; 
+    height:100%; 
+    line-height:inherit;
+}
+
+.backtotop:hover {
+    opacity:1;
 }
 
 @media screen and (max-width:750px){
