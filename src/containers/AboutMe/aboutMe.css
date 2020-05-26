@@ -6,24 +6,30 @@
     text-align: center;
 }
 
-.content .img--about-me {
+.img--about-me {
     max-width: 35%;
+    margin:0 0 10px 15px; 
+    clear: right;
+    float: right;
+}
+
+.img--secondary {
+    margin: 0 auto;
+    max-width: 50%;
 }
 
 @media screen and (max-width:750px){
-    .content .img--about-me {
+    .img--about-me {
         float: right;
+        margin:0 0 10px 15px;
     }
 }
 
 
 @media screen and (max-width:415px){
-    .content .img--about-me {
+    .img--about-me {
         float: none;
         max-width: 100%;
+        margin: 0;
     }
-}
-
-.borderedbox {
-    border:1px solid;
 }

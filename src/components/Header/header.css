@@ -29,3 +29,60 @@
     padding-right:0; 
     border-right:none;
 }
+
+.row0, .row0 a {
+    color:#A8A7A6; 
+    background-color:#222222;
+}
+.row0 a:hover {
+    color:#EA5616;
+}
+
+.row1 {
+    color:#474747; 
+    background-color:#FFFFFF;
+}
+
+
+.header {
+    padding:50px 0;
+}
+
+.header .logo {
+    float: left;
+}
+
+.header .logo * {
+    margin:0; 
+    padding:0; 
+    line-height:1;
+}
+.header .logo h1 {
+    margin-top:8px; 
+    font-size:26px; 
+    letter-spacing:3px;
+}
+
+.header .logo a {
+    color: inherit;
+}
+
+.fl_right {
+    float: right;
+}
+
+@media screen and (max-width:750px){
+	.header {
+        text-align:center;
+    }
+	.header .logo {
+        margin:0 0 30px 0;
+        display:block; 
+        float:none;
+    }
+
+    .fl_right {
+        display:block; 
+        float:none;
+    }
+}

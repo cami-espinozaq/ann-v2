@@ -76,8 +76,25 @@
 }
 
 .copyright * {
-    margin:0; 
-    padding:0;
+    margin: 0; 
+    padding: 0;
+}
+
+.copyright p:first-child {
+    float: left;
+}
+
+.copyright p:last-child {
+    float: right;
+}
+
+.row4 {
+    color:#A8A7A6; 
+    background-color:#191A1E;
+}
+.row5, .row5 a {
+    color:#A8A7A6; 
+    background-color:#0C0C0C;
 }
 
 @media screen and (max-width:750px){
@@ -87,6 +104,11 @@
     
     .footer .one_centered_block {
         width: 75%;
+    }
+
+    .copyright p, .copyright p:first-child, .copyright p:last-child {
+        display: block; 
+        float: none;
     }
 }
 

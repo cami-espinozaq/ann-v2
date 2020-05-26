@@ -35,11 +35,11 @@ const Gallery = () => {
             <Navigation backgroundUrl={Background}>
                 <Breadcrumb activePage="Gallery" />
             </Navigation>
-            <div className="wrapper row3">
+            <div className="wrapper main-row">
                 <main className="hoc container clear"> 
                     <figure className="gallery">
                         <header className="heading">Gallery</header>
-                        <ul className="nospace clear gallery">
+                        <ul className="clear gallery">
                             <SRLWrapper options={options}>
                                 {imagesWrapper}
                             </SRLWrapper>

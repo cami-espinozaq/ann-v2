@@ -35,17 +35,54 @@
     background-attachment: fixed;
 }
 
-.font-xs{font-size:.8rem;}
+.title-caption { 
+    font-size:.8rem;
+    margin:0; 
+    padding:0; 
+    list-style:none;
+}
+
+.one_half {
+    float:left; 
+    margin:0 0 0 3.06748466257669%; 
+    list-style:none;
+    width:48.46625766871166%;
+}
+
+.one_half:first-child {
+    margin-left:0; 
+    clear:left;
+}
+
 
 /* Page Intro
 --------------------------------------------------------------------------------------------------------------- */
-#pageintro{padding:200px 0; text-align:center;}
-#pageintro *{word-wrap:break-word;}
-#pageintro .heading{margin-bottom:20px; font-size:5rem; font-weight:400;}
-#pageintro p{font-size:1.2rem;}
+.pageintro {
+    padding:200px 0; 
+    text-align:center;
+}
+.pageintro * {
+    word-wrap:break-word;
+}
+.pageintro .heading {
+    margin-bottom:20px; 
+    font-size:5rem; 
+    font-weight:400;
+}
+.pageintro p {
+    font-size:1.2rem;
+}
 
 @media screen and (max-width:750px) {
-    #pageintro .heading {
+    .pageintro .heading {
         font-size:2rem;
+    }
+
+    .one_half {
+        display:block; 
+        float:none; 
+        width:auto; 
+        margin:0 0 50px 0; 
+        padding:0;
     }
 }

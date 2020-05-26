@@ -44,8 +44,8 @@ const Header = () => {
                 </div>
             </div>
             <div className="wrapper row1">
-                <header id="header" className="hoc clear"> 
-                    <div id="logo" className="fl_left">
+                <header className="header hoc clear"> 
+                    <div className="logo">
                         <h1><Link to="/">Ann Carr Tours</Link></h1>
                     </div>
                     <div className="fl_right">

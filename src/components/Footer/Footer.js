@@ -35,10 +35,10 @@ export const Footer = () => {
             </div>
             <div className="wrapper row5">
                 <div className="copyright hoc clear"> 
-                    <p className="fl_left">
+                    <p>
                         Copyright &copy; 2019 - All Rights Reserved - anncarrtours.co.uk
                     </p>
-                    <p className="fl_right">
+                    <p>
                         <a 
                             href="https://www.os-templates.com/"
                             target="_blank"

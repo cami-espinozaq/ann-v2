@@ -10,7 +10,7 @@ export const Navigation = (props) => {
         <div className="bgded parallax"
             style={{ backgroundImage: background }}>
             <div className="wrapper row2">
-                <nav id="mainav" className="hoc clear">
+                <nav className="mainav hoc clear">
                     <ul className="clear">
                         <li>
                             <NavLink to="/" exact>Home</NavLink>
@@ -33,7 +33,7 @@ export const Navigation = (props) => {
 
 export const Breadcrumb = (props) => {
     return (
-        <div id="breadcrumb" className="hoc clear"> 
+        <div className="breadcrumb hoc clear"> 
             <ul>
                 <li><HashLink to="#">Home</HashLink></li>
                 <li><HashLink to="#">{props.activePage}</HashLink></li>

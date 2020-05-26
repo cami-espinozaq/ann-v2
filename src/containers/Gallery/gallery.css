@@ -17,3 +17,31 @@
 .gallery li.vertical a {
     transform: rotate(90deg) scale(0.9);
 }
+
+.gallery ul {
+    margin:0; 
+    padding:0; 
+    list-style:none;
+}
+
+.one_quarter {
+    float:left; 
+    margin:0 0 0 3.06748466257669%; 
+    list-style:none;
+    width:22.69938650306748%;
+}
+
+.one_quarter.first {
+    margin-left:0; 
+    clear:left;
+}
+
+@media screen and (max-width:750px){
+    .one_quarter {
+        display:block; 
+        float:none; 
+        width:auto; 
+        margin:0 0 50px 0; 
+        padding:0;
+    }
+}
