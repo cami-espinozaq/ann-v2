@@ -1,4 +1,4 @@
-.img-caption {
+.imgCaption {
     font-size: 12px;
 }
 
@@ -6,20 +6,20 @@
     text-align: center;
 }
 
-.img--about-me {
+.mainImg {
     max-width: 35%;
     margin:0 0 10px 15px; 
     clear: right;
     float: right;
 }
 
-.img--secondary {
+.secondaryImg {
     margin: 0 auto;
     max-width: 50%;
 }
 
 @media screen and (max-width:750px){
-    .img--about-me {
+    .mainImg {
         float: right;
         margin:0 0 10px 15px;
     }
@@ -27,7 +27,7 @@
 
 
 @media screen and (max-width:415px){
-    .img--about-me {
+    .mainImg {
         float: none;
         max-width: 100%;
         margin: 0;

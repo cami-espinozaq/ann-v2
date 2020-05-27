@@ -24,20 +24,20 @@
     list-style:none;
 }
 
-.one_quarter {
+.quarter {
     float:left; 
     margin:0 0 0 3.06748466257669%; 
     list-style:none;
     width:22.69938650306748%;
 }
 
-.one_quarter.first {
+.quarter.first {
     margin-left:0; 
     clear:left;
 }
 
 @media screen and (max-width:750px){
-    .one_quarter {
+    .quarter {
         display:block; 
         float:none; 
         width:auto; 

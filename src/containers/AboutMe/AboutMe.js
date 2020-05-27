@@ -16,7 +16,7 @@ const AboutMe = () => {
             <div className="wrapper main-row">
                 <main className="hoc container clear"> 
                     <h1>About Ann</h1>
-                    <img className="img--about-me"
+                    <img className="mainImg"
                         src={MainImg}
                         alt="about-me" />
                     <p>After careers first as an officer in the Royal Air Force and then an air stewardess Ann joined a major UK Tour Operator in an operational role handling incoming American groups. 
@@ -53,9 +53,9 @@ const AboutMe = () => {
                         A poor life this if, full of care, We have no time to stand and stare.”
                     </i></p>
                     <br />
-                    <div className="img--secondary">
+                    <div className="secondaryImg">
                         <img src={GroupImg} alt="about-me2" />
-                        <p className="centered img-caption">Ann with Lord and Lady Palmer of Childs Hill.</p>
+                        <p className="centered imgCaption">Ann with Lord and Lady Palmer of Childs Hill.</p>
                     </div>
                 </main>
             </div>

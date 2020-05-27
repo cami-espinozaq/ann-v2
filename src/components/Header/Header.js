@@ -48,7 +48,7 @@ const Header = () => {
                     <div className="logo">
                         <h1><Link to="/">Ann Carr Tours</Link></h1>
                     </div>
-                    <div className="fl_right">
+                    <div className="contactMe">
                         <HashLink smooth className="btn" to="#contact-me">
                             Contact me
                         </HashLink>

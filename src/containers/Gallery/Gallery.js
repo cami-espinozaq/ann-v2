@@ -12,7 +12,7 @@ const Gallery = () => {
     const imagesWrapper = images.map((img, i) => {
         const newLineClass = i % 4 === 0 ? "first" : "";
         return (
-            <li className={"one_quarter " + newLineClass} key={i}>
+            <li className={"quarter " + newLineClass} key={i}>
                 <img src={img} alt={"image-" + i} />
             </li>
         );

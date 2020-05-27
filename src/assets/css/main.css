@@ -150,6 +150,10 @@ img {
     background-color:#FFFFFF;
 }
 
+.parallax {
+    background-attachment: fixed;
+}
+
 
 /* Media Queries ----------------------- */
 @-ms-viewport {

@@ -67,7 +67,7 @@
     color: inherit;
 }
 
-.fl_right {
+.contactMe {
     float: right;
 }
 
@@ -81,7 +81,7 @@
         float:none;
     }
 
-    .fl_right {
+    .contactMe {
         display:block; 
         float:none;
     }

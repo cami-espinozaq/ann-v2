@@ -76,8 +76,8 @@ const Home = () => {
             </Navigation>
             <div className="wrapper main-row">
                 <main className="hoc container clear"> 
-                    <div className="one_half">
-                        <p className="title-caption">The Guide</p>
+                    <div className="half">
+                        <p className="titleCaption">The Guide</p>
                         <h6 className="heading">Hi, I'm Ann...</h6>
                         <p>Drawing on over thirty years of experience in guiding and tourism, 
                             I provide bespoke tours, specialising in both the London and Heart 
@@ -88,8 +88,8 @@ const Home = () => {
                         </p>
                         <Link className="btn" to="/about">About me &raquo;</Link> 
                     </div>
-                    <div className="one_half">
-                        <img className="ann-img" src={mainImg} alt="ann" />
+                    <div className="half">
+                        <img className="annImg" src={mainImg} alt="ann" />
                     </div>
                 </main>
             </div>
@@ -104,7 +104,7 @@ const HomeImageWrapper = (props) => {
         <div 
             className="wrapper bgded overlay overlay--soft parallax"
             style={{ backgroundImage: background }}>
-            <div className="hoc testimonials clear">
+            <div className="hoc bannerImg clear">
                 <article className={props.float}>
                     <h6 className="heading">{props.title}</h6>
                     <blockquote>{props.quote}</blockquote>

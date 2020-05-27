@@ -9,11 +9,11 @@ import "./footer.css";
 export const Footer = () => {
     return (
         <React.Fragment>
-            <div className="wrapper row4">
+            <div className="wrapper upperRow">
                 <footer className="footer hoc clear"> 
-                    <div className="one_centered_block">
+                    <div className="centeredBlock">
                         <h6 id="contact-me" className="heading">Contact Me</h6>
-                        <div className="list-with-img">
+                        <div className="listWithImg">
                             <ul className="linklist">
                                 <li>
                                     <FontAwesomeIcon icon={faPhoneAlt} />
@@ -33,7 +33,7 @@ export const Footer = () => {
                     </div>
                 </footer>
             </div>
-            <div className="wrapper row5">
+            <div className="wrapper lowerRow">
                 <div className="copyright hoc clear"> 
                     <p>
                         Copyright &copy; 2019 - All Rights Reserved - anncarrtours.co.uk
