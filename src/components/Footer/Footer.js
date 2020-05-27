@@ -4,17 +4,18 @@ import { faPhoneAlt, faMobileAlt, faChevronUp } from '@fortawesome/free-solid-sv
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import Badges from '../../assets/images/footer/badges.png';
 import { HashLink } from 'react-router-hash-link';
-import "./footer.css";
+import { Wrapper, mainClass } from '../../shared/helper';
+import classes from "./footer.module.css";
 
 export const Footer = () => {
     return (
         <React.Fragment>
-            <div className="wrapper upperRow">
-                <footer className="footer hoc clear"> 
-                    <div className="centeredBlock">
+            <Wrapper class={classes.upperRow}>
+                <footer className={mainClass(classes.footer)}> 
+                    <div className={classes.centeredBlock}>
                         <h6 id="contact-me" className="heading">Contact Me</h6>
-                        <div className="listWithImg">
-                            <ul className="linklist">
+                        <div className={classes.listWithImg}>
+                            <ul className={classes.linklist}>
                                 <li>
                                     <FontAwesomeIcon icon={faPhoneAlt} />
                                     +44 (0) 121 707 8538
@@ -32,14 +33,13 @@ export const Footer = () => {
                         </div>
                     </div>
                 </footer>
-            </div>
-            <div className="wrapper lowerRow">
-                <div className="copyright hoc clear"> 
+            </Wrapper>
+            <Wrapper class={classes.lowerRow}>
+                <div className={mainClass(classes.copyright)}>
                     <p>
                         Copyright &copy; 2019 - All Rights Reserved - anncarrtours.co.uk
                     </p>
-                    <p>
-                        <a 
+                    <p><a 
                             href="https://www.os-templates.com/"
                             target="_blank"
                             rel="noopener noreferrer"
@@ -48,13 +48,12 @@ export const Footer = () => {
                         </a>
                     </p>
                 </div>
-            </div>
+            </Wrapper>
         </React.Fragment>
     );
 };
 
 export const BackToTop = () => {
-
     const [ isScrolled, setIsScrolled ] = useState();
 
     useEffect(() => {
@@ -69,9 +68,8 @@ export const BackToTop = () => {
         const visible = element.scrollTop / element.scrollHeight > 0.2;
         setIsScrolled(visible);
     }
-
     const backToTop = (
-        <HashLink smooth className="backtotop" to="#top">
+        <HashLink smooth className={classes.backtotop} to="#top">
             <FontAwesomeIcon icon={faChevronUp} />
         </HashLink>
     );

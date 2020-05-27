@@ -103,26 +103,6 @@ img {
     padding:100px 0;
 }
 
-.overlay {
-    position: relative; 
-    z-index: 0;
-    color:#FFFFFF; 
-    background-color:inherit;
-}
-
-.overlay::after {
-    display:block; 
-    position:absolute; 
-    top:0; 
-    left:0; 
-    width:100%; 
-    height:100%; 
-    content:""; 
-    z-index:-2;
-    color:inherit; 
-    background-color:rgba(0,0,0,.55);
-}
-
 .bgded {
     background-position:center; 
     background-repeat:no-repeat; 

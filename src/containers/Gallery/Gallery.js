@@ -1,8 +1,9 @@
 import React from 'react';
 import { Navigation, Breadcrumb } from '../../components/Navigation/Navigation';
+import { PageWrapper } from '../../shared/helper';
 import { SRLWrapper } from "simple-react-lightbox";
 import Background from '../../assets/images/about/oxford2.jpeg';
-import "./gallery.css";
+import classes from "./gallery.module.css";
 
 const importAll = r => r.keys().map(r);
 const images = importAll(require.context('../../assets/images/gallery/', false, /\.(png|jpg)$/));
@@ -10,9 +11,9 @@ const images = importAll(require.context('../../assets/images/gallery/', false, 
 const Gallery = () => {
 
     const imagesWrapper = images.map((img, i) => {
-        const newLineClass = i % 4 === 0 ? "first" : "";
+        const newLineClass = i % 4 === 0 ? classes.first : "";
         return (
-            <li className={"quarter " + newLineClass} key={i}>
+            <li className={`${classes.quarter} ${newLineClass}`} key={i}>
                 <img src={img} alt={"image-" + i} />
             </li>
         );
@@ -35,18 +36,16 @@ const Gallery = () => {
             <Navigation backgroundUrl={Background}>
                 <Breadcrumb activePage="Gallery" />
             </Navigation>
-            <div className="wrapper main-row">
-                <main className="hoc container clear"> 
-                    <figure className="gallery">
-                        <header className="heading">Gallery</header>
-                        <ul className="clear gallery">
-                            <SRLWrapper options={options}>
-                                {imagesWrapper}
-                            </SRLWrapper>
-                        </ul>
-                    </figure>
-                </main>
-            </div>
+            <PageWrapper>
+                <figure className={classes.gallery}>
+                    <header className="heading">Gallery</header>
+                    <ul className={`clear ${classes.gallery}`}>
+                        <SRLWrapper options={options}>
+                            {imagesWrapper}
+                        </SRLWrapper>
+                    </ul>
+                </figure>
+            </PageWrapper>
         </React.Fragment>
     );
 };

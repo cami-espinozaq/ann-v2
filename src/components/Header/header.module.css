@@ -30,19 +30,18 @@
     border-right:none;
 }
 
-.row0, .row0 a {
+.upperRow, .upperRow a {
     color:#A8A7A6; 
     background-color:#222222;
 }
-.row0 a:hover {
+.upperRow a:hover {
     color:#EA5616;
 }
 
-.row1 {
+.lowerRow {
     color:#474747; 
     background-color:#FFFFFF;
 }
-
 
 .header {
     padding:50px 0;

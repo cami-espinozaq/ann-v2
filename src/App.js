@@ -5,7 +5,8 @@ import { Switch, Route, Redirect } from 'react-router-dom';
 import AboutMe from './containers/AboutMe/AboutMe';
 import Gallery from './containers/Gallery/Gallery';
 import Home from './containers/Home/Home';
-import SimpleReactLightbox from "simple-react-lightbox";
+import SimpleReactLightbox from 'simple-react-lightbox';
+import './assets/css/main.css';
 
 function App() {
 

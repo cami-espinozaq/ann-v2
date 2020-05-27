@@ -2,6 +2,7 @@ import React from 'react';
 import { Navigation } from '../../components/Navigation/Navigation';
 import Background from '../../assets/images/home/main.jpg';
 import { Link } from 'react-router-dom';
+import { PageWrapper, mainClass, Wrapper } from '../../shared/helper';
 import mainImg from '../../assets/images/home/ann_main.jpg';
 
 import shakespeare from '../../assets/images/home/london-shakespeare-theater.jpg';
@@ -12,7 +13,7 @@ import theater from '../../assets/images/home/theater.jpg';
 import camden from '../../assets/images/home/camden-docks.jpg';
 import stonehenge from '../../assets/images/home/stonehenge.jpg';
 
-import "./home.css";
+import classes from "./home.module.css";
 
 const IMAGES = [
     {
@@ -69,30 +70,28 @@ const Home = () => {
     return (
         <React.Fragment>
             <Navigation backgroundUrl={Background}>
-                <article className="pageintro hoc clear"> 
+                <article className={mainClass(classes.pageintro)}> 
                     <h3 className="heading">Experience the real England</h3>
                     <p>Sightseeing made easy with professionally guided tours</p>      
                 </article>
             </Navigation>
-            <div className="wrapper main-row">
-                <main className="hoc container clear"> 
-                    <div className="half">
-                        <p className="titleCaption">The Guide</p>
-                        <h6 className="heading">Hi, I'm Ann...</h6>
-                        <p>Drawing on over thirty years of experience in guiding and tourism, 
-                            I provide bespoke tours, specialising in both the London and Heart 
-                            of England regions of the United Kingdom. There is a wide range of 
-                            experiences available to suit every taste, from the modern to the 
-                            historic, from general to specific — we can make sure that your 
-                            excursion or event is handled both professionally and with style.
-                        </p>
-                        <Link className="btn" to="/about">About me &raquo;</Link> 
-                    </div>
-                    <div className="half">
-                        <img className="annImg" src={mainImg} alt="ann" />
-                    </div>
-                </main>
-            </div>
+            <PageWrapper>
+                <div className={classes.half}>
+                    <p className={classes.titleCaption}>The Guide</p>
+                    <h6 className="heading">Hi, I'm Ann...</h6>
+                    <p>Drawing on over thirty years of experience in guiding and tourism, 
+                        I provide bespoke tours, specialising in both the London and Heart 
+                        of England regions of the United Kingdom. There is a wide range of 
+                        experiences available to suit every taste, from the modern to the 
+                        historic, from general to specific — we can make sure that your 
+                        excursion or event is handled both professionally and with style.
+                    </p>
+                    <Link className="btn" to="/about">About me &raquo;</Link> 
+                </div>
+                <div className={classes.half}>
+                    <img className={classes.annImg} src={mainImg} alt="ann" />
+                </div>
+            </PageWrapper>
             {imageWrappers}
         </React.Fragment>
     );
@@ -100,17 +99,16 @@ const Home = () => {
 
 const HomeImageWrapper = (props) => {
     const background = `url(${props.img})`;
+    const wrapperClasses = `${classes.overlay} bgded parallax`;
     return (
-        <div 
-            className="wrapper bgded overlay overlay--soft parallax"
-            style={{ backgroundImage: background }}>
-            <div className="hoc bannerImg clear">
-                <article className={props.float}>
+        <Wrapper class={wrapperClasses} style={{ backgroundImage: background }}>
+            <div className={mainClass(classes.bannerImg)}>
+                <article style={{float: props.float}}>
                     <h6 className="heading">{props.title}</h6>
                     <blockquote>{props.quote}</blockquote>
                 </article>
             </div>
-        </div>
+        </Wrapper>
     );
 };
 

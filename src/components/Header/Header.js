@@ -5,14 +5,14 @@ import { faFacebookF , faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
-import '../../assets/css/main.css';
-import './header.css';
+import { Wrapper, mainClass } from '../../shared/helper';
+import classes from './header.module.css';
 
 const Header = () => {
     return (
         <React.Fragment>
-            <div className="wrapper row0">
-                <div id="top" className="topbar hoc clear"> 
+            <Wrapper class={classes.upperRow}>
+                <div id="top" className={mainClass(classes.topbar)}>
                     <ul>    
                         <li>
                             <FontAwesomeIcon icon={faPhoneAlt} />
@@ -22,8 +22,7 @@ const Header = () => {
                             <FontAwesomeIcon icon={faEnvelope} />
                             ann@anncarrtours.co.uk
                         </li>
-                        <li>
-                            <a 
+                        <li><a 
                                 href="https://www.facebook.com/anncarrtours"
                                 target="_blank"
                                 rel="noopener noreferrer">
@@ -31,8 +30,7 @@ const Header = () => {
                                 /anncarrtours
                             </a>
                         </li>
-                        <li>
-                            <a 
+                        <li><a 
                                 href="https://www.instagram.com/anncarrtours"
                                 target="_blank"
                                 rel="noopener noreferrer">
@@ -42,19 +40,19 @@ const Header = () => {
                         </li>
                     </ul>
                 </div>
-            </div>
-            <div className="wrapper row1">
-                <header className="header hoc clear"> 
-                    <div className="logo">
+            </Wrapper>
+            <Wrapper class={classes.lowerRow}>
+                <header className={mainClass(classes.header)}>
+                    <div className={classes.logo}>
                         <h1><Link to="/">Ann Carr Tours</Link></h1>
                     </div>
-                    <div className="contactMe">
+                    <div className={classes.contactMe}>
                         <HashLink smooth className="btn" to="#contact-me">
                             Contact me
                         </HashLink>
                     </div>
                 </header>
-            </div>
+            </Wrapper>
         </React.Fragment>
     );
 };
