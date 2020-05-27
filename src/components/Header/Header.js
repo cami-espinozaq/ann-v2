@@ -5,7 +5,6 @@ import { faFacebookF , faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
-import '../../assets/css/main.css';
 import './header.css';
 
 const Header = () => {
@@ -23,22 +22,16 @@ const Header = () => {
                             ann@anncarrtours.co.uk
                         </li>
                         <li>
-                            <a 
-                                href="https://www.facebook.com/anncarrtours"
-                                target="_blank"
-                                rel="noopener noreferrer">
+                            <SocialMedia site="facebook">
                                 <FontAwesomeIcon icon={faFacebookF} />
                                 /anncarrtours
-                            </a>
+                            </SocialMedia>
                         </li>
                         <li>
-                            <a 
-                                href="https://www.instagram.com/anncarrtours"
-                                target="_blank"
-                                rel="noopener noreferrer">
-                                <FontAwesomeIcon icon={faInstagram} />
+                            <SocialMedia site="instagram">
+                                <FontAwesomeIcon size="lg" icon={faInstagram} />
                                 @anncarrtours
-                            </a>
+                            </SocialMedia>
                         </li>
                     </ul>
                 </div>
@@ -58,5 +51,15 @@ const Header = () => {
         </React.Fragment>
     );
 };
+
+const SocialMedia = (props) => (
+    <a 
+        href={`https://www.${props.site}.com/anncarrtours`}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="noTransition">
+        {props.children}
+    </a>
+);
 
 export default Header;

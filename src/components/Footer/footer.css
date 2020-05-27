@@ -41,6 +41,10 @@
     opacity: 0.6;
 }
 
+.footer .svg-inline--fa {
+    margin-right: 8px;
+}
+
 .backtotop {
     z-index:999; display:inline-block; 
     position:fixed; 
