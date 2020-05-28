@@ -1,5 +1,6 @@
 {
   "name": "ann-web",
+  "homepage": "http://www.anncarrtours.co.uk/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
